@@ -26,10 +26,14 @@ GUARD &7000
 
 .main
 {
-    lda #22
-    jsr oswrch
-    lda #7
-    jsr oswrch
+    lda #22:jsr oswrch
+    lda #7:jsr oswrch
+
+	\\ Turn off cursor by directly poking crtc
+	SEI
+	LDA #10: STA &FE00
+	LDA #32: STA &FE01
+	CLI	
 
     LDX #0
 
@@ -144,7 +148,8 @@ EQUB HI(n*40)
 NEXT
 
 .data
-INCBIN "castle_bw.txt.bin"
+;INCBIN "castle_bw.txt.bin"
+INCBIN "castle_colour.txt.bin"
 
 .end
 
