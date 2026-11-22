@@ -31,4 +31,4 @@ A small 2017 6502 experiment (beebasm).
 - Three commits, all on 2017-06-28; no TODO or plan notes found. Looks finished as an experiment.
 
 ## See also
-- Related on D: `D:\beeb\mine\teletext-slojd` (MODE 7 canvas editor), `D:\beeb\mine\teletextr`.
+- Related on D: `D:\beeb\mine\teletext-slojd` (MODE 7 canvas editor), `D:\bitshifters\teletextr`.
